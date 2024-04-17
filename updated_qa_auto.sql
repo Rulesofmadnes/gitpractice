@@ -21,8 +21,8 @@ CREATE TABLE cars (
     userId INT,
     carBrandId INT,
     carModelId INT,
-    mileage INT,
-    initialMileage INT,
+    mileage FLOAT,
+    initialMileage FLOAT,
     FOREIGN KEY (userId) REFERENCES users(id),
     FOREIGN KEY (carBrandId) REFERENCES car_brands(id),
     FOREIGN KEY (carModelId) REFERENCES car_models(id)
